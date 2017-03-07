@@ -5,7 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"pretest": "npm install --silent && cd ./node_modules/sublibrary && npm install --silent",
-		"test": "sh ./node_modules/sublibrary/node_modules/.bin/tsc"
+		"test": "sh ./node_modules/sublibrary/node_modules/.bin/tsc",
+		"test.fail": "sh ./node_modules/sublibrary/node_modules/.bin/tsc -p tsconfig.fail.json",
+		"test.fail2": "sh ./node_modules/sublibrary/node_modules/.bin/tsc -p tsconfig.fail2.json"
 	},
 	"author": "",
 	"license": "ISC",
